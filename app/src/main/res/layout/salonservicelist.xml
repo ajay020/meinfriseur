@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:elevation="6dp"
+    android:layout_margin="6dp"
+    android:padding="4dp"
+    android:layout_height="wrap_content">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blackcode"/>
+<ImageView
+    android:id="@+id/image"
+    android:layout_width="match_parent"
+    android:background="@drawable/slide"
+    android:scaleType="fitXY"
+    android:alpha="0.5"
+    android:layout_height="150dp" />
+        <TextView
+            android:id="@+id/appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/whiteborder"
+            android:textColor="@android:color/white"
+            android:text="Geplanter Termin"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="17sp"
+            android:text="Sheetal Tifin Center"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>

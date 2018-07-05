@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="friseurbarbers.mein.meinfriseur.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/logo"/>
+
+        <Button
+            android:id="@+id/btn_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:background="@drawable/facebookborder"
+            android:textColor="@android:color/white"
+            android:text="Mit Facebook einloggen"/>
+
+<TextView
+    android:id="@+id/or"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btn_facebook"
+    android:layout_centerHorizontal="true"
+    android:textSize="17sp"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:textColor="@android:color/black"
+    android:text="ODES"/>
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+
+            android:backgroundTint="@android:color/black"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/or"/>
+
+        <TextView
+            android:id="@+id/iam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Ich Bin"/>
+
+<RelativeLayout
+    android:id="@+id/radioLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/iam"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/activity_vertical_margin">
+    <TextView
+    android:id="@+id/or1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:textColor="@android:color/black"
+    android:textStyle="bold"
+    android:text="ODES"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <RadioButton
+    android:id="@+id/female"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Female"
+        android:checked="false"
+        android:textSize="1sp"
+        android:layout_marginRight="25dp"
+    android:button="@null"
+    android:textColor="@android:color/white"
+    android:background="@drawable/femalemaleradio"/>
+    <!--<TextView-->
+        <!--android:id="@+id/or1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@+id/female"-->
+        <!--android:layout_marginLeft="@dimen/activity_vertical_margin"-->
+        <!--android:layout_marginRight="@dimen/activity_vertical_margin"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:textStyle="bold"-->
+        <!--android:text="ODES"/>-->
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/maleradio"
+        android:text="Male"
+        android:layout_marginLeft="25dp"
+        android:textSize="1sp"
+        android:button="@null"
+        android:checked="false"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@+id/or1"/>
+    </RadioGroup>
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/radioLayout"
+    android:layout_marginTop="@dimen/activity_horizontal_margin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:text="Geburtsdatum"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:layout_alignParentRight="true"
+        android:id="@+id/dateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/activity_vertical_margin"
+        android:drawableRight="@drawable/calendar"
+        android:layout_height="wrap_content"
+        />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/continuescreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continues"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+</RelativeLayout>

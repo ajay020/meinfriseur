@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="friseurbarbers.mein.meinfriseur.MainActivity">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/blackcode"/>-->
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/back"-->
+    <!--android:alpha="0.3"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/logo"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="Passwort"
+            android:inputType="textPassword"
+            android:backgroundTint="@android:color/black"/>
+        <EditText
+            android:id="@+id/conf_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bestätige das Passwort"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:layout_below="@+id/password"
+            android:backgroundTint="@android:color/black"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/singup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fertig"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+</RelativeLayout>

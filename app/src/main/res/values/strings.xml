@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MeinFriseur</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Deine Termine</string>
+    <string name="notconfirm">Angefragt</string>
+    <string name="nextappoinment">Bestätigt</string>
+    <string name="pastappoinment">Vergangen</string>
+
+    <string name="logout">LogOut</string>
+    <string name="fb_app_id">485964328470981</string>
+    <string name="continues">Fortsetzen</string>
+    <string name="contactus">Contact Us</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

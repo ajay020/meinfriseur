@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ffffff"
+    >
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:background="@drawable/edittextborder"
+        android:gravity="start"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textView"
+        android:hint="Nachricht eingeben" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginborder"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="Geene nehmen wir hier deine Nachricht entgegen Nachricht; Senden"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
