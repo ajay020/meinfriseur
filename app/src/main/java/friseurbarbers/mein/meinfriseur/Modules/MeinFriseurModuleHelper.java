@@ -29,12 +29,21 @@ public class MeinFriseurModuleHelper implements Serializable {
     String image;
     String status;
     String service;
+    String address;
 
     public MeinFriseurModuleHelper(String terminid, String friseurName, String datum, String zeit) {
         this.terminid = terminid;
         this.friseurName = friseurName;
         this.datum = datum;
         this.zeit = zeit;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getAddress() {
+        return address;
     }
 
     public String getService() {

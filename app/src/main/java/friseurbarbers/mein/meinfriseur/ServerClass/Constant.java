@@ -31,7 +31,7 @@ public class Constant {
     public static final String ServiceList="servicelist";
     public static final String majorlist_URL  = "http://tcsionjaipur.com/MeinFriseur/majorlist.php/";
     public static final String specficlist_URL  = "http://tcsionjaipur.com/MeinFriseur/specificlist.php/";
-
+    public static final String search_URL = "http://tcsionjaipur.com/Barber/webservices/search.php/";
 
 
 }

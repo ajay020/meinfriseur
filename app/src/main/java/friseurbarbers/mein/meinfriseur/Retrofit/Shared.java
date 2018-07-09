@@ -25,5 +25,10 @@ public interface Shared {
     public static String gender="gender";
 
 
-
+    String MAJOR_JSON_KEY = "major_json_key";
+    String SPECIFIC_JSON_KEY = "specific_json_key";
+    String MAJOR_ITEM_LIST = "major_item_list";
+    String MAJOR_CHECKED_ITEMS = "major_checked_items";
+    String SPECIFIC_ITEM_LIST = "specific_item_list";
+    String SPECIFIC_CHECKED_ITEMS = "specific_checked_items";
 }
